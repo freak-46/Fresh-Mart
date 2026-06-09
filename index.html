@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fresh Mart</title>
+  <link rel="stylesheet" href="src/output.css">
+</head>
+
+<body>
+  <header class="sticky top-0 z-50 bg-white shadow-md ">
+    <div class="flex justify-end pr-6 md:flex md:justify-end md:mr-18 md:gap-20 md:mt-1 gap-9 ">
+      <h3 class="font-serif font-bold text-gray-500 transition-colors duration-300 cursor-pointer hover:text-green-600">
+        Track</h3>
+      <h3 class="font-serif font-bold text-gray-500 transition-colors duration-300 cursor-pointer hover:text-green-600">
+        Help</h3>
+      <a href="profile.php" class="w-6 "><img src="images/user.png" alt="Profile" class="transition-all duration-200 ease-in-out hover:bg-green-600 rounded-4xl"> </a>
+    </div>
+
+    <hr class=" md:border-gray-300 md:opacity-40 md:mt-3">
+
+    <div class=" md:flex md:justify- md:items-center md:justify-between lg:justify-around">
+      <div class="flex items-center justify-between mx-2 my-4 ">
+
+
+        <div class="flex items-center gap-3 ">
+          <img src="images/shopping-cart.png" alt="Fresh Mart Logo" width="40">
+          <h1 class=" font-serif text-[23px] text-green-600 lg:text-[28px]">Fresh Mart</h1>
+        </div>
+        <div class=" md:hidden">
+          <img src="/images/cart.svg" alt="User Cart" width="30">
+        </div>
+      </div>
+      <search
+        class="flex items-center px-2 mx-2 overflow-hidden transition-colors duration-300 border-2 border-gray-300 rounded-lg md:w-150 focus-within:border-green-600">
+        <input type="text" placeholder="Search for products..." class="w-full outline-none h-11">
+        <img src="/images/search.svg" alt="Search" width="35"
+          class="w-10 p-1 bg-green-600 rounded-lg cursor-pointer hover:opacity-85 hover:transition-opacity hover:duration-300">
+      </search>
+      <div class="hidden cursor-pointer md:block hover:scale-105 hover:transition-transform hover:duration-400">
+        <img src="/images/cart.svg" alt="User Cart" width="30">
+      </div>
+
+    </div>
+  </header>
+  <section class="mt-5 md:hidden">
+    <div class="p-5 text-white bg-gradient-to-r from-green-500 to-green-800 h-35 sm:h-60 md:h-100">
+      <h1 class=" font-bold sm:text-[30px]">
+        Fresh Groceries Delivered to Your Door
+      </h1>
+      <p class=" text-[15px] sm:text-[25px]">
+        Get up to 30% off on your first order
+      </p>
+      <button class="p-2 mt-3 font-bold text-green-700 bg-white rounded-lg ">
+        Shop Now
+      </button>
+    </div>
+    <div>
+      <img src="/images/bg.jpeg" alt="Background" class="hidden w-full h-object-cover md:block">
+    </div>
+  </section>
+  <section
+    class="items-center hidden mt-5 text-white md:flex bg-gradient-to-r from-green-500 to-green-800 p-11 lg:p-30 lg:h-150 lg:gap-20">
+    <div class="">
+      <h1 class=" font-bold sm:text-[30px]">
+        Fresh Groceries Delivered to Your Door
+      </h1>
+      <p class=" text-[15px] sm:text-[25px]">
+        Get up to 30% off on your first order
+      </p>
+      <button
+        class="p-2 mt-3 font-bold text-green-700 ease-in-out bg-white rounded-lg cursor-pointer hover:scale-105 hover:transition-transform hover:duration-400">
+        Shop Now
+      </button>
+    </div>
+    <div>
+      <img src="/images/bg.jpeg" alt="Background" class=" rounded-2xl">
+    </div>
+  </section>
+  <article class="mt-4 ">
+    <h1 class=" font-bold sm:text-[30px] lg:ml-20 ">
+      Shop by Category
+    </h1>
+    <div class="grid grid-cols-2 gap-2 mt-4 md:grid-cols-4 lg:grid-cols-8 lg:mx-20 lg:gap-6">
+      <a href="products_page.php?cat=Fruits">
+        <div
+          class="flex flex-col items-center p-6 transition-all bg-orange-100 cursor-pointer rounded-2xl hover:scale-105 duration-400">
+          <span class="text-3xl">🍎</span>
+          <span class="mt-2 font-bold">Fruits</span>
+        </div>
+      </a>
+
+      <a href="products_page.php?cat=Vegetables">
+        <div
+          class="flex flex-col items-center p-6 transition-all bg-green-100 cursor-pointer rounded-2xl hover:scale-105 duration-400">
+          <span class="text-3xl">🥕</span>
+          <span class="mt-2 font-bold">Vegetables</span>
+        </div>
+      </a>
+
+      <a href="products_page.php?cat=Dairy">
+        <div
+          class="flex flex-col items-center p-6 transition-all bg-blue-100 cursor-pointer rounded-2xl hover:scale-105 duration-400">
+          <span class="text-3xl">🥛</span>
+          <span class="mt-2 font-bold">Dairy</span>
+        </div>
+      </a>
+      <a href="products_page.php?cat=Spices">
+        <div
+          class="flex flex-col items-center p-6 transition-all bg-yellow-100 cursor-pointer rounded-2xl hover:scale-105 duration-400">
+          <span class="text-3xl">🌶️</span>
+          <span class="mt-2 font-bold">Spices</span>
+        </div>
+      </a>
+      <a href="products_page.php?cat=Meat">
+        <div
+          class="flex flex-col items-center p-6 transition-all bg-red-100 cursor-pointer rounded-2xl hover:scale-105 duration-400">
+          <span class="text-3xl">🥩</span>
+          <span class="mt-2 font-bold">Meat</span>
+        </div>
+      </a>
+      <a href="products_page.php?cat=Beverages">
+        <div
+          class="flex flex-col items-center p-6 transition-all bg-purple-100 cursor-pointer rounded-2xl hover:scale-105 duration-400">
+          <span class="text-3xl">🥤</span>
+          <span class="mt-2 font-bold">Beverages</span>
+        </div>
+      </a>
+      <a href="products_page.php?cat=Snacks">
+        <div
+          class="flex flex-col items-center p-6 transition-all bg-pink-100 cursor-pointer rounded-2xl hover:scale-105 duration-400">
+          <span class="text-3xl">🍪</span>
+          <span class="mt-2 font-bold">Snacks</span>
+        </div>
+      </a>
+      <a href="products_page.php?cat=Frozen">
+        <div
+          class="flex flex-col items-center p-6 transition-all cursor-pointer bg-cyan-100 rounded-2xl hover:scale-105 duration-400">
+          <span class="text-3xl">❄️</span>
+          <span class="mt-2 font-bold">Frozen</span>
+        </div>
+      </a>
+
+    </div>
+  </article>
+  <section class="mt-7 ">
+    <h1 class=" font-bold mb-5 sm:text-[30px] sm:text-center"> Our Best Selling Products</h1>
+    <div class="gap-4 sm:grid sm:grid-cols-2 sm:gap-none sm:mx-12 md:flex md:justify-around">
+      <div
+        class="flex items-center gap-5 mb-4 bg-green-600 rounded-l-2xl sm:flex-col sm:w-70 sm:h-80 sm:rounded-b-none sm:rounded-t-2xl">
+        <img src="/images/momo.webp" alt="momo"
+          class="object-cover h-30 w-30 rounded-l-2xl sm:w-full sm:h-40 sm:object-cover sm:rounded-t-2xl sm:rounded-b-none">
+        <div class="flex flex-col gap-3 text-white ">
+          <h1 class=" font-bold lg:text-[15px] text-center">veg & Paneer momo</h1>
+          <div class="flex gap-1">
+            <img src="/images/star.png" alt="rating" class="w-5 ">
+            <span>4.5</span>
+          </div>
+          <button
+            class=" bg-white text-green-600 font-semibold rounded-[10px] hover:scale-105 transition-all duration-400 ease-in-out cursor-pointer w-24 lg:h-10">
+            Learn More
+          </button>
+        </div>
+      </div>
+      <div
+        class="flex items-center gap-5 mb-4 bg-green-600 rounded-l-2xl sm:flex-col sm:w-70 sm:h-80 sm:rounded-b-none sm:rounded-t-2xl">
+        <img src="/images/basmati.avif" alt="basmati rice"
+          class="object-cover h-30 w-30 rounded-l-2xl sm:w-full sm:h-40 sm:object-cover sm:rounded-t-2xl sm:rounded-b-none">
+        <div class="flex flex-col gap-3 text-white -center">
+          <h1 class="font-bold ">Basmati rice</h1>
+          <div class="flex gap-1">
+            <img src="/images/star.png" alt="rating" class="w-5 ">
+            <span>4.3</span>
+          </div>
+          <button
+            class=" bg-white text-green-600 font-semibold rounded-[10px] hover:scale-105 transition-all duration-400 ease-in-out cursor-pointer w-24 lg:h-10">
+            Learn More
+          </button>
+        </div>
+      </div>
+      <div
+        class="flex items-center gap-5 mb-4 bg-green-600 rounded-l-2xl sm:flex-col sm:w-70 sm:h-80 sm:rounded-b-none sm:rounded-t-2xl">
+        <img src="images/daal.png" alt="daal"
+          class=" h-30 w-30 rounded-l-2xl sm:w-full sm:h-40 sm:object-cover sm:rounded-t-2xl sm:rounded-b-none">
+        <div class="flex flex-col gap-3 text-white ">
+          <h1 class="font-bold ">Daal</h1>
+          <div class="flex gap-1">
+            <img src="/images/star.png" alt="rating" class="w-5 ">
+            <span>4.4</span>
+          </div>
+          <button
+            class=" bg-white text-green-600 font-semibold rounded-[10px] hover:scale-105 transition-all duration-400 ease-in-out cursor-pointer w-24 lg:h-10">
+            Learn More
+          </button>
+        </div>
+      </div>
+      <div
+        class="flex items-center gap-5 mb-4 bg-green-600 rounded-l-2xl sm:flex-col sm:w-70 sm:h-80 sm:rounded-b-none sm:rounded-t-2xl">
+        <img src="/images/spices.jpg" alt="spices"
+          class="object-cover h-30 w-30 rounded-l-2xl sm:w-full sm:h-40 sm:object-cover sm:rounded-t-2xl sm:rounded-b-none">
+        <div class="flex flex-col gap-3 text-white ">
+          <h1 class="font-bold ">Spices</h1>
+          <div class="flex gap-1">
+            <img src="/images/star.png" alt="rating" class="w-5 ">
+            <span>4.8</span>
+          </div>
+          <button
+            class=" bg-white text-green-600 font-semibold rounded-[10px] hover:scale-105 transition-all duration-400 ease-in-out cursor-pointer w-24 lg:h-10">
+            Learn More
+          </button>
+        </div>
+      </div>
+
+
+    </div>
+
+  </section>
+  <section class="grid grid-cols-2 pt-5 pl-5 text-white bg-blue-950 sm:grid-cols-4 md:px-10">
+    <div class="flex flex-col mb-5 sm:gap-3">
+      <h1 class=" font-bold md:text-[25px]"> About Us</h1>
+      <span class=" text-[12px] hover:text-gray-400 transition-colors duration-300 cursor-pointer md:text-[17px]">
+        Our Story
+      </span>
+      <span class=" text-[12px] hover:text-gray-400 transition-colors duration-300 cursor-pointer md:text-[17px]">
+        Careers
+      </span>
+      <span class=" text-[12px] hover:text-gray-400 transition-colors duration-300 cursor-pointer md:text-[17px]">
+        Why Choose Us
+      </span>
+    </div>
+    <div class="flex flex-col mb-5 sm:gap-3">
+      <h1 class=" font-bold md:text-[25px]">Customer Care</h1>
+      <span class=" text-[12px] hover:text-gray-400 transition-colors duration-300 cursor-pointer md:text-[17px]">
+        Help Center
+      </span>
+      <span class=" text-[12px] hover:text-gray-400 transition-colors duration-300 cursor-pointer md:text-[17px]">
+        Track Order
+      </span>
+      <span class=" text-[12px] hover:text-gray-400 transition-colors duration-300 cursor-pointer md:text-[17px]">
+        Returns
+      </span>
+    </div>
+    <div class="flex flex-col mb-5 sm:gap-3">
+      <h1 class=" font-bold md:text-[25px]"> Shop</h1>
+      <span class=" text-[12px] hover:text-gray-400 transition-colors duration-300 cursor-pointer md:text-[17px]">
+        All Products
+      </span>
+      <span class=" text-[12px] hover:text-gray-400 transition-colors duration-300 cursor-pointer md:text-[17px]">
+        Deals
+      </span>
+      <span class=" text-[12px] hover:text-gray-400 transition-colors duration-300 cursor-pointer md:text-[17px]">
+        New Arrivals
+      </span>
+    </div>
+    <div class="flex flex-col mb-5 sm:gap-3">
+      <h1 class=" font-bold md:text-[25px]">Contact</h1>
+      <span class=" text-[12px] hover:text-gray-400 transition-colors duration-300 cursor-pointer md:text-[17px]">
+        support@freshmart.com
+      </span>
+      <span class=" text-[12px] hover:text-gray-400 transition-colors duration-300 cursor-pointer md:text-[17px]">
+        090-1234-1532
+      </span>
+      <span class=" text-[12px] hover:text-gray-400 transition-colors duration-300 cursor-pointer md:text-[17px]">
+        Mon-Sun: 8AM - 10PM
+      </span>
+    </div>
+  </section>
+  <hr class="border-gray-600 ">
+  <footer class="py-4 text-sm text-center text-white bg-blue-950">
+    &copy; 2024 Fresh Mart. All rights reserved.
+  </footer>
+  <script src="main.js"></script>
+</body>
+
+</html>
