@@ -1,0 +1,14 @@
+{
+  "name": "fresh-mart",
+  "version": "1.0.0",
+  "description": "Fresh Mart - Premium Groceries",
+  "scripts": {
+    "build:css": "@tailwindcss/cli -i ./src/input.css -o ./dist/output.css --minify",
+    "watch:css": "@tailwindcss/cli -i ./src/input.css -o ./dist/output.css --watch",
+    "dev": "@tailwindcss/cli -i ./src/input.css -o ./dist/output.css --watch"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.2.4",
+    "tailwindcss": "^4.2.4"
+  }
+}
